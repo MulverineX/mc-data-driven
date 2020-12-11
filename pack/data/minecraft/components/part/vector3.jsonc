@@ -18,7 +18,7 @@
                     "property": "index",
                     "index": {
                         "type": "builtin:parameter",
-                        "parameter": "axis"
+                        "parameter": "axis.number"
                     }
                 }
             },
@@ -31,9 +31,9 @@
                     },
                     { "name": "value" }
                 ],
-                "actions": {
-                    "type": "builtin:property",
-                    "property": "index.update",
+                "actions": [{
+                    "type": "builtin:update_property",
+                    "property": "index",
                     "index": {
                         "type": "builtin:parameter",
                         "parameter": "axis"
@@ -42,7 +42,7 @@
                         "type": "builtin:parameter",
                         "parameter": "value"
                     }
-                }
+                }]
             }
         }
     ]
