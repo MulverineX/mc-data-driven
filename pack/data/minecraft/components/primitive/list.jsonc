@@ -10,35 +10,44 @@
                     "range": { "min": 1 },
                     "required": false
                 },
-                { "name": "values", "required": false }
+                {
+                    "name": "values",
+                    "required": false
+                }
             ]},
             "default": { "type": "builtin:this" }
         },
         {
             "name": "index",
-            "update": { "parameters": [
-                { "name": "index" },
-                { "name": "value" }
-            ]},
+            "update": { 
+                "parameters": [
+                    { "name": "index" },
+                    { "name": "value" }
+                ]
+            },
             "default": { "parameters": [{ 
                 "name": "index",
                 "type": "minecraft:primitive/ranged_integer",
                 "range": {
                     "max": {
                         "type": "builtin:calculate/sum",
-                        "start": { 
-                            "type": "builtin:property",
-                            "property": "length"
-                        },
-                        "end": -1
+                        "values": [
+                            { 
+                                "type": "builtin:property",
+                                "property": "length"
+                            },
+                            -1
+                        ]
                     },
                     "min": {
                         "type": "builtin:calculate/product",
-                        "start": { 
-                            "type": "builtin:property",
-                            "property": "length"
-                        },
-                        "end": -1
+                        "values": [
+                            { 
+                                "type": "builtin:property",
+                                "property": "length"
+                            },
+                            -1
+                        ]
                     }
                 }
             }] }
