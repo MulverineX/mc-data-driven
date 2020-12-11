@@ -1,0 +1,13 @@
+{
+    "type": "builtin:save",
+    "entries": [
+        {
+            "key": "Motion",
+            "type": "minecraft:part/motion"
+        },
+        {
+            "key": "Pos",
+            "type": "minecraft:part/position"
+        }
+    ]
+}

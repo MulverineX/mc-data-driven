@@ -1,0 +1,42 @@
+{
+    "type": "builtin:save",
+    "entries": [
+        {
+            "key": "X",
+            "type": "minecraft:primitive/double"
+        },
+        {
+            "key": "Y",
+            "type": "minecraft:primitive/double"
+        },
+        {
+            "key": "Z",
+            "type": "minecraft:primitive/double"
+        }
+    ],
+    "properties": [
+        {
+            "name": "position",
+            "default": {
+                "type": "minecraft:secondary/vector_3",
+                "values": [
+                    {
+                        "type": "builtin:parameter",
+                        "parameter": "value",
+                        "key": "X"
+                    },
+                    {
+                        "type": "builtin:parameter",
+                        "parameter": "value",
+                        "key": "Z"
+                    },
+                    {
+                        "type": "builtin:parameter",
+                        "parameter": "value",
+                        "key": "Y"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "type": "minecraft:primitive/list",
+    "length": 3,
+    "item": { "type": "minecraft:primitive/double" },
+    "values": [0.0, 0.0, 0.0],
+    "properties": [
+        {
+            "name": "axis",
+            "default": {
+                "type": "builtin:action",
+                "parameters": [{
+                    "name": "axis",
+                    "type": "builtin:enum",
+                    "options": ["x", "y", "z"]
+                }],
+                "return": {
+                    "type": "builtin:property",
+                    "property": "index",
+                    "index": {
+                        "type": "builtin:parameter",
+                        "parameter": "axis"
+                    }
+                }
+            },
+            "update": {
+                "parameters": [
+                    {
+                        "name": "axis",
+                        "type": "builtin:enum",
+                        "options": ["x", "y", "z"]
+                    },
+                    {
+                        "name": "value",
+                        "type": "minecraft:primitive/double"
+                    }
+                ],
+                "actions": {
+                    "type": "builtin:property",
+                    "property": "index.update",
+                    "index": {
+                        "type": "builtin:parameter",
+                        "parameter": "axis"
+                    },
+                    "value": {
+                        "type": "builtin:parameter",
+                        "parameter": "value"
+                    }
+                }
+            }
+        }
+    ]
+}
