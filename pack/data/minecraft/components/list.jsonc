@@ -6,7 +6,7 @@
                 { "name": "item" },
                 {
                     "name": "length",
-                    "type": "minecraft:primitive/ranged_integer",
+                    "type": "minecraft:ranged_integer",
                     "range": { "min": 1 },
                     "required": false
                 },
@@ -27,7 +27,7 @@
             },
             "default": { "parameters": [{ 
                 "name": "index",
-                "type": "minecraft:primitive/ranged_integer",
+                "type": "minecraft:ranged_integer",
                 "range": {
                     "max": {
                         "type": "builtin:calculate/sum",

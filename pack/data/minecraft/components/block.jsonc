@@ -3,15 +3,15 @@
     "entries": [
         {
             "key": "X",
-            "type": "minecraft:primitive/double"
+            "type": "minecraft:double"
         },
         {
             "key": "Y",
-            "type": "minecraft:primitive/double"
+            "type": "minecraft:double"
         },
         {
             "key": "Z",
-            "type": "minecraft:primitive/double"
+            "type": "minecraft:double"
         }
     ],
     "properties": [
