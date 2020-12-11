@@ -13,7 +13,7 @@
                     "type": "builtin:enum",
                     "options": ["x", "y", "z"]
                 }],
-                "return": {
+                "return": { // Property Getter as a Provider
                     "type": "builtin:property",
                     "property": "index",
                     "index": {
@@ -31,8 +31,8 @@
                     },
                     { "name": "value" }
                 ],
-                "actions": [{
-                    "type": "builtin:update_property",
+                "actions": [{ // Property Update as an Action
+                    "type": "builtin:property",
                     "property": "index",
                     "index": {
                         "type": "builtin:parameter",
