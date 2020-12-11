@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:part/vector3",
+    "item": { "type": "minecraft:double" },
+    "values": [0.0, 0.0, 0.0],
+    "properties": [{
+        "name": "axis",
+        "update": {
+            "parameters": [{
+                "name": "value",
+                "type": "minecraft:double"
+            }]
+        }
+    }]
+}

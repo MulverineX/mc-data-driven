@@ -3,22 +3,22 @@
     "entries": [
         {
             "key": "X",
-            "type": "minecraft:double"
+            "type": "minecraft:long"
         },
         {
             "key": "Y",
-            "type": "minecraft:double"
+            "type": "minecraft:long"
         },
         {
             "key": "Z",
-            "type": "minecraft:double"
+            "type": "minecraft:long"
         }
     ],
     "properties": [
         {
             "name": "position",
             "default": {
-                "type": "minecraft:secondary/vector_3",
+                "type": "minecraft:part/vector3l",
                 "values": [
                     {
                         "type": "builtin:parameter",

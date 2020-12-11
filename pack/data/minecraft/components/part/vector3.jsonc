@@ -1,8 +1,8 @@
 {
     "type": "minecraft:list",
     "length": 3,
-    "item": { "type": "minecraft:double" },
-    "values": [0.0, 0.0, 0.0],
+    "item": { "type": "minecraft:integer" },
+    "values": [0, 0, 0],
     "properties": [
         {
             "name": "axis",
@@ -29,10 +29,7 @@
                         "type": "builtin:enum",
                         "options": ["x", "y", "z"]
                     },
-                    {
-                        "name": "value",
-                        "type": "minecraft:double"
-                    }
+                    { "name": "value" }
                 ],
                 "actions": {
                     "type": "builtin:property",
